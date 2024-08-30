@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Hexagon Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark" style="opacity: 1;">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <span><img src="/images/Screenshot_2024-08-06_at_11.50.07_AM-removebg-preview.jpg" style="width: 40%;" /></span>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-5">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navcol-5" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="teams.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="thankYou.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="canvasSection">
+        <canvas id="hexCanvas"></canvas>
+        <div id="textContainer">
+            <h2>Our Vision:</h2>
+            <p>To foster research and technological advancements in astronomical science and to develop a community of passionate engineers to explore the wonders of the universe.</p>
+            <h2>Our Mission:</h2>
+            <p>We aim to promote and foster curiosity among students to gain knowledge, skills and understanding in the study of astronomy. We seek to ignite a sense of passion within the community through a series of seminars, workshops and other events spread throughout the year</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

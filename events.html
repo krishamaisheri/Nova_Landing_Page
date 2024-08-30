@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Hexagon Background</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark" style="opacity: 1;">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <span><img src="images/Screenshot_2024-08-06_at_11.50.07_AM-removebg-preview.jpg" style="width: 40%;" /></span>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-5">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navcol-5" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                     dg       <a class="nav-link" href="index.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="teams.html" style="border-width: 1px;border-style: solid;border-radius: 25px;">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="border-width: 1px;border-style: solid;border-radius: 25px;">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="canvasSection">
+        <canvas id="hexCanvas"></canvas>
+        <div id="contentWrapper">
+            <!-- Welcome Text Section -->
+            <section id="welcomeSection">
+                <h1>Welcome to DJS NOVA's <br>Event Gallery</h1>
+            </section>
+            <!-- Image Gallery Section -->
+            <section id="photoGallery">
+                <div class="photo-item">
+                    <img src="images/photo1.jpeg" alt="Photo 1">
+                    <div class="photo-overlay">Setting up of equipment</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo2.jpeg" alt="Photo 2">
+                    <div class="photo-overlay">Nutritious Breakfast</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo3.jpeg" alt="Photo 3">
+                    <div class="photo-overlay">Nature's Tunnel</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo4.jpeg" alt="Photo 4">
+                    <div class="photo-overlay">Interesting Botanical Preachment</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo5.jpeg" alt="Photo 5">
+                    <div class="photo-overlay">Organic Roses Settlement</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo6.jpeg" alt="Photo 6">
+                    <div class="photo-overlay">The Boat House</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo7.jpeg" alt="Photo 7">
+                    <div class="photo-overlay">The Sunset</div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photo8.jpeg" alt="Photo 2">
+                    <div class="photo-overlay">Pre-Possessing Garden</div>
+                </div>
+                <!-- Add more photo items here -->
+            </section>
+        </div>
+    </section>
+    <script src="events.js"></script>
+</body>
+</html>

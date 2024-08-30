@@ -1,0 +1,246 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: black; /* Background color */
+}
+
+#canvasSection {
+    position: absolute; /* Position absolutely to cover the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure it's behind other content */
+}
+
+canvas {
+    position: absolute; /* Ensure canvas covers the entire section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#textContainer {
+    position: relative; /* Relative positioning to be on top of the canvas */
+    z-index: 2; /* Ensure the text container is above the canvas */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners for the text container */
+    margin-top: 15%;
+    width: 40%;
+    font-size: 24px;
+    margin-left: 27.5%;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for navbar */
+    opacity: 1; /* Ensure full opacity */
+    padding: 0; /* Remove default padding */
+    position: fixed; /* Fix the navbar to the top of the viewport */
+    top: 0; /* Position it at the top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 3; /* Ensure navbar is on top of other content */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Pushes the brand icon to the left */
+}
+
+.navbar-brand img {
+    width: 9%; /* Adjusts the width of the brand image */
+}
+
+.navbar-toggler {
+    border: none; /* Remove default border */
+    background: none; /* Remove background */
+    padding: 0; /* Remove padding */
+}
+
+.navbar-toggler-icon {
+    width: 30px; /* Adjust size of the custom icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-collapse {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align items to the right */
+    flex-grow: 1; /* Allow the collapse container to grow */
+}
+
+.navbar-nav {
+    display: flex; /* Display nav items in one line */
+    align-items: center; /* Center items vertically */
+    margin-top: -15%; /* Remove default margin */
+    margin-right: 2%;
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Spacing between nav items */
+}
+
+.navbar-nav .nav-link {
+    border-width: 1px; /* Border width for nav links */
+    border-style: solid; /* Solid border style */
+    border-radius: 25px; /* Rounded corners for nav links */
+    padding: 8px 16px; /* Padding for better spacing */
+    color: white; /* Text color for nav links */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Align content within the link */
+    align-items: center; /* Center content vertically within the link */
+    font-size: 24px; /* Increase font size for nav links */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for nav links */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Background color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-top: 10px; /* Adjust margin for mobile view */
+        flex-direction: column; /* Stack items vertically in mobile view */
+        align-items: center; /* Center items horizontally in mobile view */
+    }
+    
+    .nav-item {
+        margin: 5px 0; /* Spacing between nav items in mobile view */
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    height: 100%;
+    background-color: black;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+.table {
+    width: 100%;
+    display: table;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+td {
+    width: 50%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.form-section, .direct-contact-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-control, 
+textarea {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.send-button {
+    height: 34px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+    width: 100%;
+    height: 34px;
+    transition: all .2s ease-in-out;
+}
+
+.send-text {
+    display: block;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+}
+
+.social-media-list {
+    text-align: center;
+    margin-top: 1pxpx;
+    padding: 0;
+}
+
+.social-media-list li {
+    display: inline-block;
+    margin: 0 10px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: rgb(27,27,27);
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: white;
+    color: black;
+}
